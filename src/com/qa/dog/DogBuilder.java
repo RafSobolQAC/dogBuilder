@@ -5,12 +5,14 @@ public class DogBuilder {
 	private int age = 0;
 	private String privates = "";
 	private String shade = "";
+	private String breed = "";
 	private boolean domesticated = false;
 
-	public DogBuilder(int age, String privates, String shade, boolean domesticated) {
+	public DogBuilder(int age, String privates, String shade, String breed, boolean domesticated) {
 		this.age = age;
 		this.privates = privates;
 		this.shade = shade;
+		this.breed = breed;
 		this.domesticated = domesticated;
 	}
 	
@@ -30,6 +32,10 @@ public class DogBuilder {
 		return this;
 
 	}
+	public DogBuilder buildBreed(String breed) {
+		this.breed = breed;
+		return this;
+	}
 	public DogBuilder buildHouse(boolean domesticated) {
 		this.domesticated = domesticated;
 		return this;
@@ -37,6 +43,6 @@ public class DogBuilder {
 	}
 	
 	public Dog build() {
-		return new Dog(age, privates, shade, domesticated);
+		return new Dog(age, privates, shade, breed, domesticated);
 	}
 }

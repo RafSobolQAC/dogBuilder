@@ -4,13 +4,15 @@ public class Dog {
 	private int age = 0;
 	private String privates = "";
 	private String shade = "";
+	private String breed = "";
 	private boolean domesticated = false;
 
 	
-	public Dog(int age, String privates, String shade, boolean domesticated) {
+	public Dog(int age, String privates, String shade, String breed, boolean domesticated) {
 		this.age = age;
 		this.privates = privates;
 		this.shade = shade;
+		this.breed = breed;
 		this.domesticated = domesticated;
 	}
 	

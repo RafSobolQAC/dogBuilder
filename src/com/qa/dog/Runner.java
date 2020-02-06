@@ -3,7 +3,7 @@ package com.qa.dog;
 public class Runner {
 	public static void main(String[] args) {
 		DogBuilder dogBuild = new DogBuilder();
-		Dog dog = dogBuild.buildAge(5).buildHouse(true).buildPrivates("boi").buildShade("dark red slash yellow").build();
+		Dog dog = dogBuild.buildAge(5).buildHouse(true).buildPrivates("boi").buildShade("dark red slash yellow").buildBreed("Chrisdog").build();
 		
 		DogBuilder dogSlowlyBuilt = new DogBuilder();
 		dogSlowlyBuilt = dogSlowlyBuilt.buildAge(10);
