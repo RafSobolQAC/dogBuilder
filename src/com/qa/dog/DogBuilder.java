@@ -16,17 +16,24 @@ public class DogBuilder {
 	
 	public DogBuilder() {}
 		
-	public void buildAge(int age) {
+	public DogBuilder buildAge(int age) {
 		this.age = age;
+		return this;
 	}
-	public void buildPrivates(String privates) {
+	public DogBuilder buildPrivates(String privates) {
 		this.privates = privates;
+		return this;
+
 	}
-	public void buildShade(String shade) {
+	public DogBuilder buildShade(String shade) {
 		this.shade = shade;
+		return this;
+
 	}
-	public void buildHouse(boolean domesticated) {
+	public DogBuilder buildHouse(boolean domesticated) {
 		this.domesticated = domesticated;
+		return this;
+
 	}
 	
 	public Dog build() {
