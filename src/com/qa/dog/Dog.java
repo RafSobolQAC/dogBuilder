@@ -27,6 +27,10 @@ public class Dog {
 	public String getShade() {
 		return shade;
 	}
+	
+	public String getBreed() {
+		return breed;
+	}
 
 	public boolean isDomesticated() {
 		return domesticated;
@@ -40,6 +44,9 @@ public class Dog {
 	}
 	public void setShade(String shade) {
 		this.shade = shade;
+	}
+	public void setBreed(String breed) {
+		this.breed = breed;
 	}
 	public void setDomesticated(boolean domesticated) {
 		this.domesticated = domesticated;
